@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate Limiting API Calls</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .counter {
+      font-size: 18px;
+      color: #ff6347;
+      margin-left: 20px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1>Rate Limiting API Calls</h1>
+  <button id="fetch-button">Fetch Data</button>
+  <span id="click-count" class="counter">0</span>
+  <div id="results" class="result"></div>
 
+  <script src="script.js"></script>
 </body>
-
 </html>
+
